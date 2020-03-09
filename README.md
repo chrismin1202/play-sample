@@ -16,11 +16,47 @@
 -->
 
 play-sample
-=========
+===========
 
 `play-sample` contains a simple Play Framework example.
 
 More details to come.
+
+How to Run
+----------
+
+First, compile
+```
+sbt compile
+```
+You can optionally, `clean`:
+```
+sbt clean compile
+```
+
+Run locally
+```
+sbt run
+```
+or to run after (re)compiling
+```
+sbt clean compile run
+```
+
+<br />
+
+Go to [Swagger](http://localhost:9000/docs/api) and play with the endpoints.Alternatively, you can use `curl` or Postman.
+
+<br />
+
+Run tests
+```
+sbt test
+```
+or to run tests after (re)compiling
+```
+sbt clean compile test
+```
 
 License
 -------
